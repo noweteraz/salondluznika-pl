@@ -1,0 +1,6 @@
+- text: Strona główna
+  url: /
+  order: 1
+- text: Kontakt
+  url: /kontakt/
+  order: 3

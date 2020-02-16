@@ -1,0 +1,35 @@
+{% assign navurl = page.url | remove: 'index.html' %}
+
+<ul class="nav nav-pills flex-column flex-lg-row" id="mainNav"> 
+  {% for item in include.navigation %}
+    {% if item.url != '/porady/' %}
+    <li class="order-{{ item.order }}">
+    <a  {% if item.url == navurl %}class="dropdown-item active" {% else %}class="dropdown-item"{% endif %} href="{{ item.url }}" itemprop="url">
+    <span itemprop="name">{{ item.text }}</span>
+    </a>
+    </li>
+    {% endif %}
+    {% if item.subitems %}
+    <li class="dropdown order-{{ item.order }}">
+        <a href="javascript:void(0)" class="dropdown-item dropdown-toggle">{{ item.text }} </a>
+        <ul class="dropdown-menu">
+        {% for itemsub in item.subitems %}
+          <li>
+          <a class="dropdown-item" itemprop="url" href="{{ itemsub.url }}"><span itemprop="name">{{ itemsub.text }}</span>
+          </a> 
+          </li>
+        {% endfor %}
+        </ul>
+    </li>
+    {% endif %}
+  {% endfor %}
+  
+  <li class="align-items-center d-none d-lg-flex order-2 px-5 mx-2">
+    <span class="header-logo">
+      <a href="{{ site.url }}" class="w-100 text-center">
+        <img alt="Logo {{ site.url }}" width="200" height="57" data-sticky-width="150" data-sticky-height="43" data-sticky-top="72" src="{{ site.logo }}">
+      </a>
+    </span>
+  </li>
+  
+</ul>

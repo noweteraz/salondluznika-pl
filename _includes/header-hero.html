@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <div class="row">
+   {% for slide in site.data.hero %}
+    <div class="col-lg-4 pl-lg-0 pr-lg-2 mb-3 appear-animation" data-appear-animation="fadeInRightShorter">
+      <span class="thumb-info thumb-info-no-borders thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom">
+        <span class="thumb-info-wrapper">
+          <img src="{{ site.baseurl }}{{ slide.image_path }}" class="img-fluid" alt="{{ slide.caption-1 }}. {{ slide.caption-2 }}">
+          <span class="thumb-info-title background-transparent mb-4 pl-4 ml-2">
+            <span class="thumb-info-type font-weight-light text-4 line-height-1 text-dark">{{ slide.caption-1 }}</span>
+            <span class="thumb-info-inner font-weight-bold text-8 line-height-4 text-dark">{{ slide.caption-2 }}</span>
+          </span>
+        </span>
+      </span>
+    </div>
+  {% endfor %}
+  </div>
+</div>

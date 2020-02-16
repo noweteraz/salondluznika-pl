@@ -1,0 +1,22 @@
+- text: Strona główna
+  url: /
+  order: 1
+- text: Porady
+  url: /porady/
+  order: 2
+  subitems:
+    - text: Windykacja
+      label: Windykacja
+      url: /windykacja/
+    - text: Długi
+      label: Długi
+      url: /dlugi/   
+    - text: Komornik
+      label: Komornik
+      url: /komornik/
+- text: Wzory pism
+  url: /wzory-pism/
+  order: 4
+- text: Kontakt
+  url: /kontakt/
+  order: 5

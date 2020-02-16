@@ -1,0 +1,65 @@
+title: Salon Dłużnika
+
+description: "Program wsparcia zadłużonych Salon Dłużnika przeznaczony jest dla osób które znalazły się w sytuacji, gdy nadmierne długi nie pozwalają na normalne życie rodzinne, społeczne czy zawodowe."
+
+url: https://www.noweteraz.pl
+show_excerpts: false # set to true to show excerpts on the homepage
+
+logo: "/assets/images/logo-salon-dluznika-web.png"
+
+timezone: Europe/Warsaw
+
+permalink: pretty
+
+google_analytics: 
+
+exclude:
+- Gruntfile.js
+- Gemfile
+- Gemfile.lock
+- package.json
+- package-lock.json
+- README*
+- node_modules
+- ".gitignore"
+
+include:
+- "_pages"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+excerpt_separator: |2+
+
+sass:
+  sass_dir: _sass/
+  style: compressed
+
+per_page: 12
+date_format: "%d-%m-%Y"
+
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+ 
+collections:
+  posts:
+    title: Posty
+    output: true
+  pages:
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/blog/:title/"
+    layout: post
+    image: 
+    description: 
+    button:
+      title: 
+      url: 
