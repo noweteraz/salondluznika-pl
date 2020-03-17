@@ -16,7 +16,7 @@ module.exports = function(grunt) {
         files: {
           'assets/js/theme.min.js': ['assets/js/theme.js'],
           'assets/js/theme.init.min.js': ['assets/js/theme.init.js'],
-          'assets/js/validate-forms.min.js': ['assets/js/validate-forms.js']
+          'assets/js/validate.min.js': ['assets/js/validate.js']
         }
       }
     },

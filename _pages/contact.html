@@ -47,7 +47,7 @@ onload="if(submitted) {window.location='/thankyou.html';}"></iframe>
 <div class="form-row">
   <div class="form-group col">
     <div class="form-check form-check-inline pb-3 pl-4">
-      <input type="checkbox" class="custom-control-input" data-msg-required="Musisz zaakceptować Politykę prywatności." data-msg-checkbox="Musisz zaakceptować Politykę prywatności." name="privacycontrol" id="privacycontrol" required oninvalid="this.setCustomValidity('Musisz zaakceptować Politykę prywatności')" oninput="setCustomValidity('')">
+      <input type="checkbox" class="custom-control-input" data-msg-required="Musisz zaakceptować Politykę prywatności." data-msg-checkbox="Musisz zaakceptować Politykę prywatności." name="privacycontrol" id="privacycontrol" required>
       <label class="custom-control-label" for="privacycontrol">Przeczytałem/am i Akceptuję <a target="_blank" href="/polityka-prywatnosci/">Politykę Prywatności</a></label>
     </div>
   </div>
@@ -55,9 +55,10 @@ onload="if(submitted) {window.location='/thankyou.html';}"></iframe>
 
 <div class="form-row">
   <div class="form-group col">
+  <input class="captcha-control required" type="hidden" name="reCaptchaControl" id="reCaptchaControl">
   <input type="hidden" name="options[reCaptcha][siteKey]" value="6LftX-EUAAAAADn9HknVSOSmM8pluDsOka2YBeq9">
   <input type="hidden" name="options[reCaptcha][secret]" value="X/AryvI58EvaCOiI0ROCQJAlx5gZvhT8JNf06Yw9RRvC4juDbOr2uWQDlo3ebn8OMIvI93iYt9HSAhk/Vq+o/ILJsssR3eDQu6IhTJv11wZC3bdjET7nYB4y3FfwT8NRjWZvYPsBW2w0dTPRHbqiBmpEnhY/RaP0hr+9onSRjBU=">
-  <div class="g-recaptcha" data-sitekey="6LftX-EUAAAAADn9HknVSOSmM8pluDsOka2YBeq9" id="form_captcha" name="form_captcha"></div>
+  <div class="g-recaptcha" data-sitekey="6LftX-EUAAAAADn9HknVSOSmM8pluDsOka2YBeq9" data-callback="recaptchaCallback"></div>
   </div>
 </div>
  
