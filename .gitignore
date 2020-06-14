@@ -1,6 +1,10 @@
-.bundle
+.jekyll-metadata
 .jekyll-cache
 .sass-cache
 Gemfile.lock
-_site
-*.gem
+_site/
+Gruntfile.js
+package.json
+package-lock.json
+_config.dev.yml
+node_modules
