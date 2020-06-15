@@ -47,8 +47,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-shell');
   
   // Register tasks.
-  grunt.registerTask('serve', ['uglify', 'concat', 'shell:jekyllServe']);
+  grunt.registerTask('serve', ['shell:jekyllServe']);
   grunt.registerTask('default', ['shell:jekyllBuild']);
-  grunt.registerTask('dev', ['uglify', 'concat']);
+  grunt.registerTask('dev', ['uglify', 'concat', 'shell:jekyllServe']);
 
 };
