@@ -9,75 +9,6 @@ lang: pl_PL
 <div class="container py-4">
 
 <div class="row mb-5">
-<div class="col">
-<h2>Formularz kontaktowy</h2>
-
-<script type="text/javascript">var submitted=false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
-onload="if(submitted) {window.location='/thankyou.html';}"></iframe>
-
-<form id="contactForm" class="contact-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd4ibgSpTR__tCpSU9SLYei9TEsO7OQWeoBxZQ_DMdplrXajw/formResponse?embedded=true" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-
-<div class="contact-form-success alert alert-success d-none mt-4" id="contactSuccess">
-  <strong>Wysłano!</strong> Twoja wiadomość została wysłana.
-</div>
-
-<div class="contact-form-error alert alert-danger d-none mt-4" id="contactError">
-  <strong>Błąd!</strong> Wystąpił błąd podczas wysyłania wiadomości.
-  <span class="mail-error-message text-1 d-block" id="mailErrorMessage"></span>
-</div>
-                
-<div class="form-row">
-  <div class="form-group col-lg-6">
-    <label class="required font-weight-bold text-dark text-2">Imię</label>
-    <input type="text" value="" data-msg-required="Wpisz Imię." maxlength="100" class="form-control" name="entry.1390514629" required>
-  </div>
-  <div class="form-group col-lg-6">
-    <label class="required font-weight-bold text-dark text-2">E-mail</label>
-    <input type="email" value="" data-msg-required="Wpisz adres e-mail." data-msg-email="Wpisz adres e-mail." maxlength="100" class="form-control" name="emailAddress" required>
-  </div>
-</div>
-<div class="form-row">
-  <div class="form-group col">
-    <label class="required font-weight-bold text-dark text-2">Opisz swój problem</label>
-    <textarea data-msg-required="Musisz wprowadzić opis." rows="5" class="form-control" name="entry.1023036745" required></textarea>
-  </div>
-</div>
-
-<div class="form-row">
-  <div class="form-group col">
-      <div class="text-1">Administratorem danych osobowych jest Fundacja Nowe Teraz z siedzibą w Warszawie 00-108, przy ul. Zielnej 39. Dane osobowe osób korzystających z formularza kontaktowego przetwarzane są w celu identyfikacji nadawcy oraz obsługi zapytania przesłanego za pośrednictwem udostępnionego formularza. Więcej informacji o przetwarzaniu danych przez Fundację Nowe Teraz oraz o przysługujących Pani/Panu prawach znajduje się w <a target="_blank" href="/polityka-prywatnosci#rodo"> Klauzuli Informacyjnej</a> Fundacji Nowe Teraz.</div>
-  </div>
-</div>
-
-<div class="form-row">
-  <div class="form-group col">
-    <div class="form-check form-check-inline pb-3 pl-4">
-      <input type="checkbox" class="custom-control-input" data-msg-required="Musisz zaakceptować Klauzulę Informacyjną." data-msg-checkbox="Musisz zaakceptować Klauzulę Informacyjną." name="privacycontrol" id="privacycontrol" required>
-     <label class="custom-control-label" for="privacycontrol">Przeczytałem/am i Akceptuję</label>
-    </div>
-  </div>
-</div>
-
-<div class="form-row">
-  <div class="form-group col">
-  <input class="captcha-control required" type="hidden" name="reCaptchaControl" id="reCaptchaControl">
-  <input type="hidden" name="options[reCaptcha][siteKey]" value="6LftX-EUAAAAADn9HknVSOSmM8pluDsOka2YBeq9">
-  <input type="hidden" name="options[reCaptcha][secret]" value="X/AryvI58EvaCOiI0ROCQJAlx5gZvhT8JNf06Yw9RRvC4juDbOr2uWQDlo3ebn8OMIvI93iYt9HSAhk/Vq+o/ILJsssR3eDQu6IhTJv11wZC3bdjET7nYB4y3FfwT8NRjWZvYPsBW2w0dTPRHbqiBmpEnhY/RaP0hr+9onSRjBU=">
-  <div class="g-recaptcha" data-sitekey="6LftX-EUAAAAADn9HknVSOSmM8pluDsOka2YBeq9" data-callback="recaptchaCallback"></div>
-  </div>
-</div>
- 
-<div class="form-row">
-  <div class="form-group col">
-    <input id="form-submit" type="submit" value="Wyślij" class="btn btn-primary btn-modern">
-  </div>
-</div>
-</form>
-
-</div>
-</div>
-<div class="row mb-5">
 <div class="col-lg-4">
 
 <div class="overflow-hidden mb-3">
@@ -94,7 +25,7 @@ onload="if(submitted) {window.location='/thankyou.html';}"></iframe>
 <ul class="list list-icons list-icons-style-3 mt-2">
 <li><i class="fas fa-map-marker-alt top-6"></i> ul. Zielna 39, 00-108 Warszawa</li>
 <li><i class="fas fa-phone top-6"></i> <strong>Telefon:</strong> <a href="tel:+48574662644">+48 574 662 644</a></li>
-<li><i class="fas fa-envelope top-6"></i> <strong>E-mail:</strong> <a href="mailto:sekretariat@noweteraz.pl">sekretariat@noweteraz.pl</a></li>
+<li><i class="fas fa-envelope top-6"></i> <strong>E-mail:</strong> <a target="_blank" href="{{ site.contact_form_link }}">sekretariat@noweteraz.pl</a></li>
 </ul>
 
 </div>

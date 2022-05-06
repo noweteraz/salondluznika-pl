@@ -13,6 +13,8 @@ permalink: pretty
 
 google_analytics: 
 
+contact_form_link: https://docs.google.com/forms/d/e/1FAIpQLSd4ibgSpTR__tCpSU9SLYei9TEsO7OQWeoBxZQ_DMdplrXajw/viewform
+
 exclude:
 - Gruntfile.js
 - Gemfile
